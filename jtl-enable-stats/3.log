@@ -1,0 +1,654 @@
+2021-07-02 07:08:17,166 INFO o.a.j.u.JMeterUtils: Setting Locale to en_US
+2021-07-02 07:08:17,182 INFO o.a.j.JMeter: Loading user properties from: /home/kyle.cao/dev/apache-jmeter-5.4.1/bin/user.properties
+2021-07-02 07:08:17,183 INFO o.a.j.JMeter: Loading system properties from: /home/kyle.cao/dev/apache-jmeter-5.4.1/bin/system.properties
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: Copyright (c) 1998-2020 The Apache Software Foundation
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: Version 5.4
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: java.version=1.8.0_252
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: os.name=Linux
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: os.arch=amd64
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: os.version=3.10.0-1160.31.1.el7.x86_64
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: file.encoding=ANSI_X3.4-1968
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: java.awt.headless=true
+2021-07-02 07:08:17,192 INFO o.a.j.JMeter: Max memory     =7460618240
+2021-07-02 07:08:17,193 INFO o.a.j.JMeter: Available Processors =4
+2021-07-02 07:08:17,198 INFO o.a.j.JMeter: Default Locale=English (United States)
+2021-07-02 07:08:17,198 INFO o.a.j.JMeter: JMeter  Locale=English (United States)
+2021-07-02 07:08:17,198 INFO o.a.j.JMeter: JMeterHome=/home/kyle.cao/dev/apache-jmeter-5.4.1
+2021-07-02 07:08:17,198 INFO o.a.j.JMeter: user.dir  =/home/kyle.cao/dev/apache-jmeter-5.4.1
+2021-07-02 07:08:17,198 INFO o.a.j.JMeter: PWD       =/home/kyle.cao/dev/apache-jmeter-5.4.1
+2021-07-02 07:08:17,198 INFO o.a.j.JMeter: IP: 127.0.0.1 Name: kyle.cao-112 FullName: kyle.cao-112
+2021-07-02 07:08:17,205 INFO o.a.j.s.FileServer: Default base='/home/kyle.cao/dev/apache-jmeter-5.4.1'
+2021-07-02 07:08:17,206 INFO o.a.j.s.FileServer: Set new base='/home/kyle.cao/jmx'
+2021-07-02 07:08:17,312 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2021-07-02 07:08:17,329 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2021-07-02 07:08:17,334 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2021-07-02 07:08:17,339 INFO o.a.j.s.SaveService: Loading file: /home/kyle.cao/jmx/go_step_enable_stats.jmx
+2021-07-02 07:08:17,381 INFO o.a.j.JMeter: Creating summariser <summary>
+2021-07-02 07:08:17,390 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2021-07-02 07:08:17,391 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-07-02 07:08:17,391 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2021-07-02 07:08:17,395 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2021-07-02 07:08:17,395 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2021-07-02 07:08:17,693 INFO o.a.j.p.j.s.JavaSampler: Created class: com.vesoft.LdbcGoStep. Uses tearDownTest: 
+2021-07-02 07:08:17,701 INFO o.a.j.JMeter: Running test (1625209697701)
+2021-07-02 07:08:17,759 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2021-07-02 07:08:17,760 INFO o.a.j.e.StandardJMeterEngine: Starting 100 threads for group Thread Group.
+2021-07-02 07:08:17,760 INFO o.a.j.e.StandardJMeterEngine: Test will stop abruptly on error
+2021-07-02 07:08:17,760 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=100 ramp-up=0 delayedStart=false
+2021-07-02 07:08:17,800 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-17
+2021-07-02 07:08:17,800 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-27
+2021-07-02 07:08:17,801 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-28
+2021-07-02 07:08:17,801 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-29
+2021-07-02 07:08:17,802 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-30
+2021-07-02 07:08:17,805 INFO o.a.j.s.FileServer: Stored: /data/harris/sf1/social_network/dynamic/person.csv
+2021-07-02 07:08:17,808 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-4
+2021-07-02 07:08:17,808 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-14
+2021-07-02 07:08:17,808 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-10
+2021-07-02 07:08:17,809 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-5
+2021-07-02 07:08:17,809 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-3
+2021-07-02 07:08:17,810 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-13
+2021-07-02 07:08:17,810 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-9
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-26
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-25
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-12
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-24
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-22
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-20
+2021-07-02 07:08:17,811 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-16
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-19
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-23
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-2
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-18
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-6
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-8
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-15
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-32
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2021-07-02 07:08:17,812 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-11
+2021-07-02 07:08:17,813 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-31
+2021-07-02 07:08:17,813 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-7
+2021-07-02 07:08:17,814 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-21
+2021-07-02 07:08:17,815 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-33
+2021-07-02 07:08:17,816 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-34
+2021-07-02 07:08:17,816 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-35
+2021-07-02 07:08:17,817 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-36
+2021-07-02 07:08:17,819 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-37
+2021-07-02 07:08:17,820 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-38
+2021-07-02 07:08:17,821 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-39
+2021-07-02 07:08:17,823 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-40
+2021-07-02 07:08:17,847 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,847 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,848 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,848 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,848 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,849 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,849 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,850 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,850 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,850 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,850 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,850 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,854 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,855 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-41
+2021-07-02 07:08:17,856 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-42
+2021-07-02 07:08:17,856 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,857 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,857 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,857 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,857 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,857 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,857 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,858 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,858 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,858 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,858 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,858 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,861 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-45
+2021-07-02 07:08:17,860 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-43
+2021-07-02 07:08:17,865 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-46
+2021-07-02 07:08:17,866 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-47
+2021-07-02 07:08:17,868 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-44
+2021-07-02 07:08:17,868 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-49
+2021-07-02 07:08:17,868 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-48
+2021-07-02 07:08:17,877 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,879 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,881 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,882 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,882 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,882 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,886 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,887 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,887 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,889 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,889 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,891 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,891 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,892 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,897 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,897 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,898 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,898 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,900 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,900 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,901 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,901 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,902 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,902 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,902 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,903 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,903 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,905 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,907 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,909 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,911 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,912 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,912 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,913 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,915 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,915 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,915 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,916 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,918 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,919 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,924 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:17,942 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,955 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,956 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:17,960 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,961 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2021-07-02 07:08:17,961 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2021-07-02 07:08:17,961 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2021-07-02 07:08:17,961 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2021-07-02 07:08:17,962 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,965 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,968 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,968 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,971 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:17,971 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,026 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,041 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,071 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,102 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,112 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,129 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,150 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,155 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,178 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,199 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,208 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,210 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,243 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,265 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,351 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,352 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,355 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,355 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,355 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,356 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,365 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,365 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,365 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,371 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,371 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,375 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,377 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,378 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,388 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,390 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,392 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,396 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,397 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,404 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,405 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,406 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,414 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,415 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,415 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,415 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,420 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,421 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,421 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,424 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,435 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,447 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,450 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,620 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,621 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,627 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,628 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,637 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,650 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,653 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,655 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,683 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,701 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,701 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,701 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,702 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,705 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,707 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,726 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,728 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,760 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:18,839 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,850 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,850 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:18,864 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-66
+2021-07-02 07:08:18,865 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-65
+2021-07-02 07:08:18,866 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-64
+2021-07-02 07:08:18,880 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-63
+2021-07-02 07:08:18,887 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-68
+2021-07-02 07:08:18,889 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-69
+2021-07-02 07:08:18,891 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-70
+2021-07-02 07:08:18,894 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-72
+2021-07-02 07:08:18,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-73
+2021-07-02 07:08:18,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-74
+2021-07-02 07:08:18,897 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-75
+2021-07-02 07:08:18,898 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-77
+2021-07-02 07:08:18,898 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-76
+2021-07-02 07:08:18,898 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-71
+2021-07-02 07:08:18,900 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-78
+2021-07-02 07:08:18,901 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-62
+2021-07-02 07:08:18,909 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-61
+2021-07-02 07:08:18,912 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-60
+2021-07-02 07:08:18,912 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-59
+2021-07-02 07:08:18,917 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,921 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-58
+2021-07-02 07:08:18,925 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-57
+2021-07-02 07:08:18,930 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-56
+2021-07-02 07:08:18,931 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-55
+2021-07-02 07:08:18,931 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-54
+2021-07-02 07:08:18,932 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-53
+2021-07-02 07:08:18,938 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:18,938 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-52
+2021-07-02 07:08:18,948 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-51
+2021-07-02 07:08:18,950 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-50
+2021-07-02 07:08:18,967 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-79
+2021-07-02 07:08:18,982 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-80
+2021-07-02 07:08:18,984 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,061 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-81
+2021-07-02 07:08:19,129 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-82
+2021-07-02 07:08:19,187 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-83
+2021-07-02 07:08:19,219 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-84
+2021-07-02 07:08:19,240 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-85
+2021-07-02 07:08:19,259 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-86
+2021-07-02 07:08:19,260 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-87
+2021-07-02 07:08:19,261 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-88
+2021-07-02 07:08:19,262 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-89
+2021-07-02 07:08:19,263 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-90
+2021-07-02 07:08:19,263 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-91
+2021-07-02 07:08:19,264 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-92
+2021-07-02 07:08:19,328 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-93
+2021-07-02 07:08:19,344 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-94
+2021-07-02 07:08:19,347 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-95
+2021-07-02 07:08:19,348 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-96
+2021-07-02 07:08:19,348 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-97
+2021-07-02 07:08:19,351 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-99
+2021-07-02 07:08:19,351 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2021-07-02 07:08:19,351 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2021-07-02 07:08:19,352 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-67
+2021-07-02 07:08:19,353 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-100
+2021-07-02 07:08:19,356 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-98
+2021-07-02 07:08:19,365 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,377 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,377 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,388 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,400 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,416 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,446 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,461 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,491 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,500 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,502 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,521 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,557 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,604 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,604 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,605 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,611 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,618 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,619 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,619 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,621 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,633 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,634 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,637 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,638 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,638 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,638 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,649 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,650 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,658 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,680 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,681 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,686 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,692 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,693 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,702 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,711 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,721 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,721 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,725 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,726 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,729 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,739 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,742 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,749 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,749 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,749 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:19,752 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,762 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,763 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,790 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,794 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,798 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,807 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,827 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,836 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:19,840 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,868 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,941 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,943 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,945 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,947 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:19,949 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,007 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,009 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,010 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,012 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,014 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,015 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,017 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,019 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,020 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,020 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,020 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,021 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,022 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,026 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,052 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,055 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,056 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,056 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,056 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,056 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,056 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,056 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,057 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,057 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,057 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,057 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,057 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,058 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,062 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,062 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,063 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,063 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,063 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,063 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,063 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,063 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,069 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,069 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,083 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,087 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,088 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,090 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,092 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,115 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,117 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,117 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,120 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,120 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,121 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,126 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: initNebulaPool success!
+2021-07-02 07:08:20,127 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,134 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,138 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,142 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,144 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,144 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,145 INFO c.v.n.c.g.n.NebulaPool: Get connection to 127.0.0.1:6757
+2021-07-02 07:08:20,145 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,146 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,148 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,154 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,156 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,159 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,170 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,172 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,179 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,180 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,192 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,199 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,200 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,200 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,200 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,212 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,217 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,225 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,226 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,252 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,275 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,299 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:20,448 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:21,030 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:21,030 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:21,051 INFO o.a.j.p.j.s.AbstractJavaSamplerClient: setupTest success!
+2021-07-02 07:08:30,007 INFO o.a.j.r.Summariser: summary +   1026 in 00:00:12 =   83.4/s Avg: 949922 Min: 12703 Max: 2369085 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2021-07-02 07:09:00,012 INFO o.a.j.r.Summariser: summary +   3078 in 00:00:30 =  102.6/s Avg: 990309 Min: 112415 Max: 1970180 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2021-07-02 07:09:00,012 INFO o.a.j.r.Summariser: summary =   4104 in 00:00:42 =   97.0/s Avg: 980213 Min: 12703 Max: 2369085 Err:     0 (0.00%)
+2021-07-02 07:09:30,005 INFO o.a.j.r.Summariser: summary +   2987 in 00:00:30 =   99.6/s Avg: 1005953 Min: 88678 Max: 2397918 Err:     0 (0.00%) Active: 100 Started: 100 Finished: 0
+2021-07-02 07:09:30,006 INFO o.a.j.r.Summariser: summary =   7091 in 00:01:12 =   98.1/s Avg: 991056 Min: 12703 Max: 2397918 Err:     0 (0.00%)
+2021-07-02 07:09:57,826 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-35
+2021-07-02 07:09:57,826 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-35
+2021-07-02 07:09:57,830 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-18
+2021-07-02 07:09:57,831 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-18
+2021-07-02 07:09:57,834 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-12
+2021-07-02 07:09:57,834 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-12
+2021-07-02 07:09:57,837 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-40
+2021-07-02 07:09:57,837 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-40
+2021-07-02 07:09:57,856 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-8
+2021-07-02 07:09:57,856 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-8
+2021-07-02 07:09:57,860 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-25
+2021-07-02 07:09:57,860 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-25
+2021-07-02 07:09:57,861 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-15
+2021-07-02 07:09:57,861 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-15
+2021-07-02 07:09:57,895 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-7
+2021-07-02 07:09:57,895 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-7
+2021-07-02 07:09:57,901 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-41
+2021-07-02 07:09:57,901 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-41
+2021-07-02 07:09:57,903 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-5
+2021-07-02 07:09:57,903 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-5
+2021-07-02 07:09:57,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-6
+2021-07-02 07:09:57,909 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-6
+2021-07-02 07:09:57,909 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-13
+2021-07-02 07:09:57,909 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-13
+2021-07-02 07:09:57,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-50
+2021-07-02 07:09:57,912 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-50
+2021-07-02 07:09:57,913 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-32
+2021-07-02 07:09:57,913 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-32
+2021-07-02 07:09:57,917 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-42
+2021-07-02 07:09:57,917 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-42
+2021-07-02 07:09:57,917 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-24
+2021-07-02 07:09:57,917 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-24
+2021-07-02 07:09:57,926 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-29
+2021-07-02 07:09:57,926 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-29
+2021-07-02 07:09:57,953 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-9
+2021-07-02 07:09:57,953 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-9
+2021-07-02 07:09:57,961 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-39
+2021-07-02 07:09:57,961 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-39
+2021-07-02 07:09:57,967 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-22
+2021-07-02 07:09:57,967 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-22
+2021-07-02 07:09:57,968 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-36
+2021-07-02 07:09:57,968 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-36
+2021-07-02 07:09:57,969 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-11
+2021-07-02 07:09:57,969 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-11
+2021-07-02 07:09:57,974 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-45
+2021-07-02 07:09:57,974 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-45
+2021-07-02 07:09:57,979 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-19
+2021-07-02 07:09:57,980 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-19
+2021-07-02 07:09:57,982 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-16
+2021-07-02 07:09:57,982 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-16
+2021-07-02 07:09:57,984 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-46
+2021-07-02 07:09:57,984 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-46
+2021-07-02 07:09:57,985 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-20
+2021-07-02 07:09:57,985 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-20
+2021-07-02 07:09:57,986 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-26
+2021-07-02 07:09:57,986 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-26
+2021-07-02 07:09:57,991 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-27
+2021-07-02 07:09:57,991 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-27
+2021-07-02 07:09:57,992 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-10
+2021-07-02 07:09:57,992 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-10
+2021-07-02 07:09:57,995 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-21
+2021-07-02 07:09:57,995 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-21
+2021-07-02 07:09:58,010 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-31
+2021-07-02 07:09:58,010 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-31
+2021-07-02 07:09:58,140 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-2
+2021-07-02 07:09:58,141 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-2
+2021-07-02 07:09:58,176 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-34
+2021-07-02 07:09:58,176 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-34
+2021-07-02 07:09:58,190 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-49
+2021-07-02 07:09:58,191 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-49
+2021-07-02 07:09:58,242 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-3
+2021-07-02 07:09:58,243 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-3
+2021-07-02 07:09:58,256 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-48
+2021-07-02 07:09:58,256 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-48
+2021-07-02 07:09:58,260 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-30
+2021-07-02 07:09:58,260 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-30
+2021-07-02 07:09:58,367 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-44
+2021-07-02 07:09:58,367 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-44
+2021-07-02 07:09:58,418 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-33
+2021-07-02 07:09:58,418 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-33
+2021-07-02 07:09:58,436 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-37
+2021-07-02 07:09:58,436 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-37
+2021-07-02 07:09:58,534 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-4
+2021-07-02 07:09:58,534 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-4
+2021-07-02 07:09:58,550 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-23
+2021-07-02 07:09:58,550 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-23
+2021-07-02 07:09:58,613 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-47
+2021-07-02 07:09:58,614 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-47
+2021-07-02 07:09:58,620 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-58
+2021-07-02 07:09:58,621 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-58
+2021-07-02 07:09:58,627 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-1
+2021-07-02 07:09:58,627 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-1
+2021-07-02 07:09:58,631 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-17
+2021-07-02 07:09:58,631 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-17
+2021-07-02 07:09:58,655 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-51
+2021-07-02 07:09:58,655 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-51
+2021-07-02 07:09:58,662 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-28
+2021-07-02 07:09:58,662 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-28
+2021-07-02 07:09:58,672 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-53
+2021-07-02 07:09:58,672 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-53
+2021-07-02 07:09:58,710 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-43
+2021-07-02 07:09:58,710 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-43
+2021-07-02 07:09:58,714 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-14
+2021-07-02 07:09:58,714 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-14
+2021-07-02 07:09:58,730 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-38
+2021-07-02 07:09:58,730 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-38
+2021-07-02 07:09:58,752 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-60
+2021-07-02 07:09:58,752 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-60
+2021-07-02 07:09:58,756 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-63
+2021-07-02 07:09:58,756 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-63
+2021-07-02 07:09:58,766 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-52
+2021-07-02 07:09:58,766 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-52
+2021-07-02 07:09:58,781 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-55
+2021-07-02 07:09:58,781 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-55
+2021-07-02 07:09:58,786 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-54
+2021-07-02 07:09:58,787 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-54
+2021-07-02 07:09:58,793 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-61
+2021-07-02 07:09:58,793 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-61
+2021-07-02 07:09:58,801 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-59
+2021-07-02 07:09:58,801 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-59
+2021-07-02 07:09:58,819 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-68
+2021-07-02 07:09:58,819 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-68
+2021-07-02 07:09:58,820 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-67
+2021-07-02 07:09:58,821 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-67
+2021-07-02 07:09:58,824 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-66
+2021-07-02 07:09:58,824 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-66
+2021-07-02 07:09:58,844 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-62
+2021-07-02 07:09:58,845 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-62
+2021-07-02 07:09:58,870 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-64
+2021-07-02 07:09:58,870 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-64
+2021-07-02 07:09:59,043 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-65
+2021-07-02 07:09:59,043 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-65
+2021-07-02 07:09:59,072 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-57
+2021-07-02 07:09:59,072 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-57
+2021-07-02 07:09:59,074 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-75
+2021-07-02 07:09:59,074 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-75
+2021-07-02 07:09:59,078 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-70
+2021-07-02 07:09:59,078 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-70
+2021-07-02 07:09:59,112 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-73
+2021-07-02 07:09:59,112 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-73
+2021-07-02 07:09:59,119 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-80
+2021-07-02 07:09:59,119 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-80
+2021-07-02 07:09:59,132 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-83
+2021-07-02 07:09:59,132 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-83
+2021-07-02 07:09:59,163 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-72
+2021-07-02 07:09:59,163 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-72
+2021-07-02 07:09:59,168 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-56
+2021-07-02 07:09:59,168 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-56
+2021-07-02 07:09:59,186 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-77
+2021-07-02 07:09:59,186 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-77
+2021-07-02 07:09:59,255 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-82
+2021-07-02 07:09:59,255 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-82
+2021-07-02 07:09:59,259 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-76
+2021-07-02 07:09:59,259 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-76
+2021-07-02 07:09:59,261 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-90
+2021-07-02 07:09:59,262 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-90
+2021-07-02 07:09:59,275 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-71
+2021-07-02 07:09:59,275 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-71
+2021-07-02 07:09:59,287 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-74
+2021-07-02 07:09:59,287 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-74
+2021-07-02 07:09:59,290 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-92
+2021-07-02 07:09:59,290 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-92
+2021-07-02 07:09:59,304 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-84
+2021-07-02 07:09:59,304 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-84
+2021-07-02 07:09:59,312 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-93
+2021-07-02 07:09:59,312 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-93
+2021-07-02 07:09:59,315 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-89
+2021-07-02 07:09:59,315 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-89
+2021-07-02 07:09:59,315 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-69
+2021-07-02 07:09:59,315 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-69
+2021-07-02 07:09:59,319 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-79
+2021-07-02 07:09:59,319 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-79
+2021-07-02 07:09:59,333 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-81
+2021-07-02 07:09:59,333 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-81
+2021-07-02 07:09:59,333 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-86
+2021-07-02 07:09:59,333 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-86
+2021-07-02 07:09:59,335 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-87
+2021-07-02 07:09:59,335 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-87
+2021-07-02 07:09:59,335 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-85
+2021-07-02 07:09:59,337 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-85
+2021-07-02 07:09:59,337 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-78
+2021-07-02 07:09:59,338 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-78
+2021-07-02 07:09:59,340 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-91
+2021-07-02 07:09:59,340 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-91
+2021-07-02 07:09:59,347 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-88
+2021-07-02 07:09:59,347 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-88
+2021-07-02 07:09:59,372 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-94
+2021-07-02 07:09:59,372 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-94
+2021-07-02 07:09:59,417 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-100
+2021-07-02 07:09:59,418 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-100
+2021-07-02 07:09:59,422 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-97
+2021-07-02 07:09:59,422 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-97
+2021-07-02 07:09:59,432 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-95
+2021-07-02 07:09:59,432 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-95
+2021-07-02 07:09:59,495 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-96
+2021-07-02 07:09:59,495 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-96
+2021-07-02 07:09:59,500 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-98
+2021-07-02 07:09:59,500 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-98
+2021-07-02 07:09:59,559 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1-99
+2021-07-02 07:09:59,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1-99
+2021-07-02 07:09:59,560 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2021-07-02 07:09:59,560 INFO o.a.j.s.FileServer: Close: /data/harris/sf1/social_network/dynamic/person.csv
+2021-07-02 07:09:59,611 INFO o.a.j.r.Summariser: summary +   2933 in 00:00:30 =   99.1/s Avg: 987565 Min:  9202 Max: 2231389 Err:     0 (0.00%) Active: 0 Started: 100 Finished: 100
+2021-07-02 07:09:59,611 INFO o.a.j.r.Summariser: summary =  10024 in 00:01:42 =   98.4/s Avg: 990034 Min:  9202 Max: 2397918 Err:     0 (0.00%)
