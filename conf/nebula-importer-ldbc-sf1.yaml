@@ -1,0 +1,782 @@
+
+  version: v2
+  description: ldbc
+  removeTempFiles: false
+  clientSettings:
+    retry: 3
+    concurrency: 30 # number of graph clients
+    channelBufferSize: 128
+    space: harris
+    connection:
+      user: root
+      password: nebula
+      address: 127.0.0.1:6757
+    postStart:
+      commands: |
+        CREATE SPACE IF NOT EXISTS harris(PARTITION_NUM = 24, REPLICA_FACTOR = 1, vid_type = fixed_string(30));
+        USE harris;
+        CREATE TAG IF NOT EXISTS `Tagclass`(`name` string,`url` string);
+        CREATE TAG IF NOT EXISTS `Comment`(`creationDate` string,`locationIP` string,`browserUsed` string,`content` string,`length` int);
+        CREATE TAG IF NOT EXISTS `Organisation`(`type` string,`name` string,`url` string);
+        CREATE TAG IF NOT EXISTS `Place`(`name` string,`url` string,`type` string);
+        CREATE TAG IF NOT EXISTS `Person`(`firstName` string,`lastName` string,`gender` string,`birthday` string,`creationDate` string,`locationIP` string,`browserUsed` string);
+        CREATE TAG IF NOT EXISTS `Post`(`imageFile` string,`creationDate` string,`locationIP` string,`browserUsed` string,`language` string,`content` string,`length` int);
+        CREATE TAG IF NOT EXISTS `Tag`(`name` string,`url` string);
+        CREATE TAG IF NOT EXISTS `Forum`(`title` string,`creationDate` string);
+        CREATE EDGE IF NOT EXISTS `HAS_INTEREST`();
+        CREATE EDGE IF NOT EXISTS `CONTAINER_OF`();
+        CREATE EDGE IF NOT EXISTS `WORK_AT`(`workFrom` int);
+        CREATE EDGE IF NOT EXISTS `IS_LOCATED_IN`();
+        CREATE EDGE IF NOT EXISTS `IS_SUBCLASS_OF`();
+        CREATE EDGE IF NOT EXISTS `STUDY_AT`(`classYear` int);
+        CREATE EDGE IF NOT EXISTS `LIKES`(`creationDate` string);
+        CREATE EDGE IF NOT EXISTS `KNOWS`(`creationDate` string);
+        CREATE EDGE IF NOT EXISTS `IS_PART_OF`();
+        CREATE EDGE IF NOT EXISTS `HAS_MODERATOR`();
+        CREATE EDGE IF NOT EXISTS `HAS_TYPE`();
+        CREATE EDGE IF NOT EXISTS `HAS_MEMBER`(`joinDate` string);
+        CREATE EDGE IF NOT EXISTS `HAS_TAG`();
+        CREATE EDGE IF NOT EXISTS `HAS_CREATOR`();
+        CREATE EDGE IF NOT EXISTS `REPLY_OF`();
+
+
+      afterPeriod: 8s
+  logPath: ./err/test.log
+  files:
+    - path: /data/harris/sf1/social_network/dynamic/comment.csv
+      failDataPath: ./err/data/Comment.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Comment
+              props:
+                - name: creationDate
+                  type: string
+                  index: 1
+                - name: locationIP
+                  type: string
+                  index: 2
+                - name: browserUsed
+                  type: string
+                  index: 3
+                - name: content
+                  type: string
+                  index: 4
+                - name: length
+                  type: int
+                  index: 5
+
+    - path: /data/harris/sf1/social_network/dynamic/person.csv
+      failDataPath: ./err/data/Person.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Person
+              props:
+                - name: firstName
+                  type: string
+                  index: 1
+                - name: lastName
+                  type: string
+                  index: 2
+                - name: gender
+                  type: string
+                  index: 3
+                - name: birthday
+                  type: string
+                  index: 4
+                - name: creationDate
+                  type: string
+                  index: 5
+                - name: locationIP
+                  type: string
+                  index: 6
+                - name: browserUsed
+                  type: string
+                  index: 7
+
+    - path: /data/harris/sf1/social_network/dynamic/forum.csv
+      failDataPath: ./err/data/Forum.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Forum
+              props:
+                - name: title
+                  type: string
+                  index: 1
+                - name: creationDate
+                  type: string
+                  index: 2
+
+    - path: /data/harris/sf1/social_network/dynamic/post.csv
+      failDataPath: ./err/data/Post.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Post
+              props:
+                - name: imageFile
+                  type: string
+                  index: 1
+                - name: creationDate
+                  type: string
+                  index: 2
+                - name: locationIP
+                  type: string
+                  index: 3
+                - name: browserUsed
+                  type: string
+                  index: 4
+                - name: language
+                  type: string
+                  index: 5
+                - name: content
+                  type: string
+                  index: 6
+                - name: length
+                  type: int
+                  index: 7
+
+    - path: /data/harris/sf1/social_network/static/tagclass.csv
+      failDataPath: ./err/data/Tagclass.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Tagclass
+              props:
+                - name: name
+                  type: string
+                  index: 1
+                - name: url
+                  type: string
+                  index: 2
+
+    - path: /data/harris/sf1/social_network/static/tag.csv
+      failDataPath: ./err/data/Tag.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Tag
+              props:
+                - name: name
+                  type: string
+                  index: 1
+                - name: url
+                  type: string
+                  index: 2
+
+    - path: /data/harris/sf1/social_network/static/organisation.csv
+      failDataPath: ./err/data/Organisation.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Organisation
+              props:
+                - name: type
+                  type: string
+                  index: 1
+                - name: name
+                  type: string
+                  index: 2
+                - name: url
+                  type: string
+                  index: 3
+
+    - path: /data/harris/sf1/social_network/static/place.csv
+      failDataPath: ./err/data/Place.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: vertex
+        vertex:
+          vid:
+            index: 0
+            type: string
+          tags:
+            - name: Place
+              props:
+                - name: name
+                  type: string
+                  index: 1
+                - name: url
+                  type: string
+                  index: 2
+                - name: type
+                  type: string
+                  index: 3
+
+    - path: /data/harris/sf1/social_network/dynamic/forum_hasMember_person.csv
+      failDataPath: ./err/data/HAS_MEMBER.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_MEMBER
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+            - name: joinDate
+              type: string
+              index: 2
+
+    - path: /data/harris/sf1/social_network/dynamic/forum_containerOf_post.csv
+      failDataPath: ./err/data/CONTAINER_OF.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: CONTAINER_OF
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/person_studyAt_organisation.csv
+      failDataPath: ./err/data/STUDY_AT.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: STUDY_AT
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+            - name: classYear
+              type: int
+              index: 2
+
+    - path: /data/harris/sf1/social_network/dynamic/person_hasInterest_tag.csv
+      failDataPath: ./err/data/HAS_INTEREST.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_INTEREST
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/comment_replyOf_comment.csv
+      failDataPath: ./err/data/REPLY_OF.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: REPLY_OF
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/comment_hasTag_tag.csv
+      failDataPath: ./err/data/HAS_TAG.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_TAG
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/forum_hasTag_tag.csv
+      failDataPath: ./err/data/HAS_TAG.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_TAG
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/person_workAt_organisation.csv
+      failDataPath: ./err/data/WORK_AT.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: WORK_AT
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+            - name: workFrom
+              type: int
+              index: 2
+
+    - path: /data/harris/sf1/social_network/dynamic/comment_replyOf_post.csv
+      failDataPath: ./err/data/REPLY_OF.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: REPLY_OF
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/comment_isLocatedIn_place.csv
+      failDataPath: ./err/data/IS_LOCATED_IN.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: IS_LOCATED_IN
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/post_hasCreator_person.csv
+      failDataPath: ./err/data/HAS_CREATOR.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_CREATOR
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/person_likes_post.csv
+      failDataPath: ./err/data/LIKES.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: LIKES
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+            - name: creationDate
+              type: string
+              index: 2
+
+    - path: /data/harris/sf1/social_network/dynamic/person_isLocatedIn_place.csv
+      failDataPath: ./err/data/IS_LOCATED_IN.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: IS_LOCATED_IN
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/comment_hasCreator_person.csv
+      failDataPath: ./err/data/HAS_CREATOR.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_CREATOR
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/post_isLocatedIn_place.csv
+      failDataPath: ./err/data/IS_LOCATED_IN.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: IS_LOCATED_IN
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/post_hasTag_tag.csv
+      failDataPath: ./err/data/HAS_TAG.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_TAG
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/person_likes_comment.csv
+      failDataPath: ./err/data/LIKES.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: LIKES
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+            - name: creationDate
+              type: string
+              index: 2
+
+    - path: /data/harris/sf1/social_network/dynamic/forum_hasModerator_person.csv
+      failDataPath: ./err/data/HAS_MODERATOR.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_MODERATOR
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/dynamic/person_knows_person.csv
+      failDataPath: ./err/data/KNOWS.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: KNOWS
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+            - name: creationDate
+              type: string
+              index: 2
+
+    - path: /data/harris/sf1/social_network/static/tagclass_isSubclassOf_tagclass.csv
+      failDataPath: ./err/data/IS_SUBCLASS_OF.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: IS_SUBCLASS_OF
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/static/place_isPartOf_place.csv
+      failDataPath: ./err/data/IS_PART_OF.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: IS_PART_OF
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/static/tag_hasType_tagclass.csv
+      failDataPath: ./err/data/HAS_TYPE.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: HAS_TYPE
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
+
+    - path: /data/harris/sf1/social_network/static/organisation_isLocatedIn_place.csv
+      failDataPath: ./err/data/IS_LOCATED_IN.csv
+      batchSize: 100
+      type: csv
+      csv:
+        withHeader: false
+        withLabel: false
+        delimiter: "|"
+      schema:
+        type: edge
+        edge:
+          name: IS_LOCATED_IN
+          withRanking: false
+          srcVID:
+            index: 0
+            type: string
+          dstVID:
+            index: 1
+            type: string
+          props:
