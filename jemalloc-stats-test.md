@@ -1,14 +1,13 @@
 # jemalloc 内存统计对 nebula 性能的影响测试
 
-*该测试的目的是衡量 `https://github.com/vesoft-inc/nebula-graph/pull/1116` 的可行性*
-
 1. 测试环境
 
-    物理机配置:2cores/32G x86 centos7 ip:192.168.8.112
+    物理机配置:2*2cores/32G x86 centos7 ip:192.168.8.112
 
     graphd/storaged/metad 各一个实例 rocksDB block cache:4096MB 其余默认
 
 2. 测试数据
+
 | Dataset | PARTITION_NUM | REPLICA_FACTOR|vid_type|
 |--|--|--|--|
 | ldbc_snb_sf1|24|1|fixed_string(30)|
@@ -106,8 +105,6 @@ epoch (10/100)
  - 吞吐量与 enable-stats 相比有所下降
 
 epoch(max/max):
- 1.856/25.677  16.994/101.326  470.187/988.761  1622.704/3647.499
- 3.848/50.591  32.499/217.844  627.597/1589.090 1904.461/4992.922
 
   | 语句| min | max | avg | median | p90 | p95 | p99 |throughout|
   |--|--|--|--|--|--|--|--|--|
